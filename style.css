@@ -1,0 +1,81 @@
+.next-btn{
+    text-align:center;
+    margin-top:40px;
+}
+
+.next-btn button{
+    position: fixed;
+    padding:30px 35px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.next-btn button:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+.music-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:12px 20px;
+    border:none;
+    border-radius:30px;
+    background:#ff4081;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    transition:.3s;
+    z-index:1000;
+}
+
+.music-btn:hover{
+    transform:scale(1.08);
+}
+
+body.dark .music-btn{
+    background:#2563eb;
+}
+
+.music-control{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 15px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    border-radius:40px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    z-index:1000;
+}
+
+.music-control input{
+    width:120px;
+    accent-color:#00bfff;
+}
+
+.music-control button{
+    padding:8px 15px;
+    border:none;
+    border-radius:20px;
+    background:#00bfff;
+    color:white;
+    cursor:pointer;
+}
+
+body.dark .music-control{
+    background:rgba(0,0,0,.5);
+
+}
+
